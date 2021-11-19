@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"> 
    
@@ -31,10 +33,10 @@
          <div class="box">
             <input type="number" class="text" id="number" name="number"  required placeholder="Phone">
             <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="canada">India</option>
-              <option value="usa">USA</option>
+              <option class="flag flag-australia" value="australia">Australia</option>
+              <option class="flag flag-canada" value="canada">Canada</option>
+              <option class="flag flag-india" value="india">India</option>
+              <option class="flag flag-united-states" value="usa">USA</option>
             </select>
          </div>
       
@@ -58,6 +60,9 @@
         </form>
     </div>
       </div>
+    
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
