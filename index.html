@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+   
+</head>
+<body>
+    
+    <div class="container">
+        <div class="info-box">
+            <h3 class="deco">Request a FREE QUOTE</h3>
+            <span class="deco">Partner with Multilingual Experts!
+                Save your cost within 12 Hours.</span>
+        </div>
+        <hr>
+    
+        <div class="formContainer">
+        <form action="index.php">
+      
+          <!-- <label for="fname">First Name</label> -->
+          <input type="text" class="text" id="fname" name="name" required placeholder="Name">
+      
+          <!-- <label for="email">Email</label> -->
+          <input type="email" class="text" id="email" name="email" required placeholder="Email">
+          
+          <!-- <label for="country">Phone</label> -->
+         <div class="box">
+            <input type="number" class="text" id="number" name="number"  required placeholder="Phone">
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="canada">India</option>
+              <option value="usa">USA</option>
+            </select>
+         </div>
+      
+          <!-- <label for="subject">Subject</label> -->
+          <textarea id="subject" name="desc" placeholder="Write something.." required style="height:200px"></textarea>
+         
+         <!-- drag & drop  -->
+         <!-- <div class="row-ctrl">
+             <p><span class="wpcf7-form-control-wrap upload-file-4"></span></p><div class="codedropz-upload-wrapper"><input type="file" size="40" class="wpcf7-form-control wpcf7-drag-n-drop-file d-none" aria-invalid="false" multiple="multiple" data-name="upload-file-4" data-type="doc|docx|xls|doc|docx|xls|xlsx|ppt|pptsx|pps|jpg|jpeg|png|gif|ppsx|pdf|mp3|mp4|psd|zip|ppt|pptsx|pps|jpg|jpeg|png|gif|ppsx|pdf|mp3|mp4|psd|zip" data-min="1" data-max="4" data-id="2805" data-version="free version 1.3.6.2" accept=".doc, .docx, .xls, .doc, .docx, .xls, .xlsx, .ppt, .pptsx, .pps, .jpg, .jpeg, .png, .gif, .ppsx, .pdf, .mp3, .mp4, .psd, .zip, .ppt, .pptsx, .pps, .jpg, .jpeg, .png, .gif, .ppsx, .pdf, .mp3, .mp4, .psd, .zip"><div class="codedropz-upload-handler"><div class="codedropz-upload-container"><div class="codedropz-upload-inner"><h3>Drag &amp; Drop Files Here</h3><span>or</span><div class="codedropz-btn-wrap"><a class="cd-upload-btn">Browse Files</a></div></div></div><span class="dnd-upload-counter"><span>0</span> of 4</span></div></div><p></p></div> -->
+             
+            <div class="upload">
+                <input type="file" id="myFile" class="files" name="filename">
+                <span class="maxFiles">Attach Max 4 files (10MB each)</span>
+           </div> 
+       
+
+
+          <input type="submit" value="Send">
+          <p style="font-size:15px;text-align:left;margin:10px 0 0 0px;" class="sideFrmPrvcy">We respect your privacy <a href="#">Policy</a></p>
+      
+        </form>
+    </div>
+      </div>
+
+</body>
+</html>
+
+
