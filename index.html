@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
-   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
 </head>
 <body>
     
@@ -24,20 +28,28 @@
         <div class="formContainer">
         <form action="index.php">
       
-          <!-- <label for="fname">First Name</label> -->
+           <!-- <label for="fname">First Name</label> --> 
           <input type="text" class="text" id="fname" name="name" required placeholder="Name">
       
           <!-- <label for="email">Email</label> -->
           <input type="email" class="text" id="email" name="email" required placeholder="Email">
           
+            <!-- <div>
+                <div class="ip"></div>
+                <div class="city"></div>
+                <div class="country"></div>
+                <div class="region"></div>
+            </div> -->
+
           <!-- <label for="country">Phone</label> -->
          <div class="box">
             <input type="number" class="text" id="number" name="number"  required placeholder="Phone">
             <select id="country" name="country">
-             <i class="flag flag-australia"></i>  <option  data-countryCode="US" value="1" selected>USA(+1)</option>
-                <i class="flag flag-canada"></i>  <option data-countryCode="AU" value="61">Australia(+61)</option>
-             <i class="flag flag-india"></i> <option data-countryCode="CA" value="1">Canada(+1)</option>
-             <i class="flag flag-united-states"></i><option data-countryCode="IN" value="91">India(+91)</option>
+            <!-- <option  data-countryCode="US" value="1" selected>USA(+1)</option>
+             <option data-countryCode="AU" value="61">Australia(+61)</option>
+              <option data-countryCode="CA" value="1">Canada(+1)</option>
+              <option data-countryCode="IN" value="91">India(+91)</option> -->
+              <option> <div class="country"></div></option>
             </select>
          </div>
       
@@ -61,10 +73,22 @@
         </form>
     </div>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+      <script>
+          $(document).ready(function(){
+              $.get("https://ipinfo.io",function(response){
+                  console.log(response);
+                  // $(".ip").html(response.ip)
+                  // $(".city").html(response.city)
+                  $(".country").html(response.country)
+                  // $(".region").html(response.region)
+              },"jsonp");
+          })
+
+          
+
+
+      </script>
 
 </body>
 </html>
