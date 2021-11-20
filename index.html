@@ -83,20 +83,14 @@
               },"jsonp");
           })
 
-          jQuery(document).ready(function ($) {
-           $("body").change(function () {
-               var numFiles = $("input",this)[0].files.length;
-               var maxuploads = $("input",this)[0].attr(\'data-maxuploads\').toString();
-               alert(numFiles);
-               if (numFiles > maxuploads ) {
-                   alert(\'Your Message\');
-                   }else {
-                   maxuploads = maxuploads + 1;
-                       }
-                   });
-           });
-           });
-
+        $(function(){
+            $("input[type = 'submit']").click(function(){
+               var $fileUpload = $("input[type='file']");
+               if (parseInt($fileUpload.get(0).files.length) > 3){
+                  alert("You are only allowed to upload a maximum of 3 files");
+               }
+            });
+         });
 
       </script>
 
