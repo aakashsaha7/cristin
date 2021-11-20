@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
 
 </head>
 <body>
@@ -26,7 +27,7 @@
         <hr>
     
         <div class="formContainer">
-        <form action="index.php">
+        <form action="">
       
            <!-- <label for="fname">First Name</label> --> 
           <input type="text" class="text" id="fname" name="name" required placeholder="Name">
@@ -41,6 +42,7 @@
                 <div class="region"></div>
             </div> -->
 
+          <!-- <label for="country">Phone</label> -->
           <div class="box">
             <input type="number" class="text" id="number" name="phone"  required placeholder="Phone">
         <select id="country">
@@ -57,8 +59,7 @@
              <p><span class="wpcf7-form-control-wrap upload-file-4"></span></p><div class="codedropz-upload-wrapper"><input type="file" size="40" class="wpcf7-form-control wpcf7-drag-n-drop-file d-none" aria-invalid="false" multiple="multiple" data-name="upload-file-4" data-type="doc|docx|xls|doc|docx|xls|xlsx|ppt|pptsx|pps|jpg|jpeg|png|gif|ppsx|pdf|mp3|mp4|psd|zip|ppt|pptsx|pps|jpg|jpeg|png|gif|ppsx|pdf|mp3|mp4|psd|zip" data-min="1" data-max="4" data-id="2805" data-version="free version 1.3.6.2" accept=".doc, .docx, .xls, .doc, .docx, .xls, .xlsx, .ppt, .pptsx, .pps, .jpg, .jpeg, .png, .gif, .ppsx, .pdf, .mp3, .mp4, .psd, .zip, .ppt, .pptsx, .pps, .jpg, .jpeg, .png, .gif, .ppsx, .pdf, .mp3, .mp4, .psd, .zip"><div class="codedropz-upload-handler"><div class="codedropz-upload-container"><div class="codedropz-upload-inner"><h3>Drag &amp; Drop Files Here</h3><span>or</span><div class="codedropz-btn-wrap"><a class="cd-upload-btn">Browse Files</a></div></div></div><span class="dnd-upload-counter"><span>0</span> of 4</span></div></div><p></p></div> -->
              
             <div class="upload">
-<!--             
-            <input type="file" name="filename"  placeholder="Upload files"  multiple="" maxuploads="4" >
+                <input type="file" id="myFile" class="files" name="filename">
                 <span class="maxFiles">Attach Max 4 files (10MB each)</span>
            </div> 
        
@@ -82,9 +83,6 @@
               },"jsonp");
           })
 
-
-
-  
           
 
 
