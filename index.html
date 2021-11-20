@@ -41,17 +41,13 @@
                 <div class="region"></div>
             </div> -->
 
-          <!-- <label for="country">Phone</label> -->
-         <div class="box">
-            <input type="number" class="text" id="number" name="number"  required placeholder="Phone">
-            <select id="country" name="country">
-            <!-- <option  data-countryCode="US" value="1" selected>USA(+1)</option>
-             <option data-countryCode="AU" value="61">Australia(+61)</option>
-              <option data-countryCode="CA" value="1">Canada(+1)</option>
-              <option data-countryCode="IN" value="91">India(+91)</option> -->
-              <option> <div class="country"></div></option>
-            </select>
-         </div>
+          <div class="box">
+            <input type="number" class="text" id="number" name="phone"  required placeholder="Phone">
+        <select id="country">
+            <option value="" class="country"></option>
+
+           </select> 
+        </div>
       
           <!-- <label for="subject">Subject</label> -->
           <textarea id="subject" name="desc" placeholder="Write something.." required style="height:200px"></textarea>
@@ -76,7 +72,7 @@
       
       <script>
           $(document).ready(function(){
-              $.get("https://ipinfo.io",function(response){
+              $.get("https://ipinfo.io/json?token=38e84c4e04c9a1",function(response){
                   console.log(response);
                   // $(".ip").html(response.ip)
                   // $(".city").html(response.city)
